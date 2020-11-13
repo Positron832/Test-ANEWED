@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The big choice</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      html{
+        min-height: 100%;
+      }
+      body{
+        font-family: serif;
+        text-align: center;
+        background-image: radial-gradient(circle, lightBlue, blue);
+        min-height: 100%;
+        user-select: none;
+        font-size: 1.5vw;
+      }
+      
+      button{
+        cursor: pointer;
+        font-size: 5vw;
+        font-family: serif;
+        box-shadow: 9px 9px 4.5px rgba(0,0,0,0.25);
+        border: 2px black solid;
+        transition: border-color 0.5s, box-shadow 0.5s linear;
+        background-image: linear-gradient(lightGrey, grey);
+      }
+      
+      button:hover{
+        border-color: white;
+        box-shadow: 0px 0px 10px 2px white;
+      }
+      
+      button#yes{
+        background-image: linear-gradient(lightGreen, green);
+        margin: auto;
+      }
+      
+      button#no{
+        background-image: linear-gradient(red, darkRed);
+        margin: auto;
+      }
+      
+      button#continue{
+        margin: auto;
+      }
+      
+      button#backToNG{
+        display: none;
+        margin: auto;
+      }
+      
+      button#restart{
+        display: none;
+        margin: auto;
+      }
+      
+      h1{
+        text-align: center;
+        color: yellow;
+        animation: animation1 1s infinite linear;
+      }
+      
+      @keyframes animation1{
+        25%{color: rgb(255,0,0);}
+        50%{color: rgb(0,255,0);}
+        75%{color: rgb(0,0,255);}
+      }
+    </style>
+  </head>
+  <body id="b">
+    
+    <h1 id="h1">Win the war?</h1>
+    
+    <button id="yes" type="button" onclick="one()">YES</button>
+    <button id="no" type="button" onclick="two()">NO</button>
+    <button id="continue" type="button" style="display: none;" onclick="document.location='stage3.html'">Continue</button>
+    
+    <button id="backToNG" type="button" onclick="document.location='https://www.newgrounds.com/portal/view/project/1525766'">Back to NG</button>
+    <button id="restart" type="button" onclick="document.location='stage1.html'">Restart</button>
+    
+    <script>
+    "strict mode"
+      function one(){
+        document.getElementById("h1").innerHTML="You won the war and lived happily ever after!";
+        document.getElementById("yes").style.display="none";
+        document.getElementById("no").style.display="none";
+        document.getElementById("backToNG").style.display="block";
+        document.getElementById("restart").style.display="block";
+        document.getElementById("b").style.backgroundImage="radial-gradient(circle, lightBlue, dodgerBlue)";
+      }
+      
+      function two(){
+        document.getElementById("h1").innerHTML="You lost the war and had to flee to France..";
+        document.getElementById("yes").style.display="none";
+        document.getElementById("no").style.display="none";
+        document.getElementById("continue").style.display="block";
+      }
+    </script>
+  </body>
+</html>
