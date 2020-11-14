@@ -13,19 +13,19 @@
         user-select: none;
       }
       
-      h1{
+      h1#menu{
         font-size: 10vw;
         animation: animation1 1.5s infinite alternate;
         transform: rotateY(20deg);
         text-shadow: 0px 0px 11px white;
       }
       
-      p{
+      p#credit{
         margin-bottom: auto;
         font-size: 5vw;
       }
       
-      button{
+      button#start{
         cursor: pointer;
         font-size: 5vw;
         padding: 15px;
@@ -39,7 +39,7 @@
         font-family: serif;
       }
       
-      button:hover{
+      button#start:hover{
        transform: rotate(1440deg);
        border-color: white;
        box-shadow: 0px 0px 20px 5px white;
