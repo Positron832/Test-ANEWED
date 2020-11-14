@@ -24,7 +24,7 @@ p#credit{
   font-size: 5vw;
 }
       
-button#start{
+button#buttonTitle{
   cursor: pointer;
   font-size: 5vw;
   padding: 15px;
@@ -38,7 +38,7 @@ button#start{
   font-family: serif;
 }
       
-button#start:hover{
+button#buttonTitle:hover{
   transform: rotate(1440deg);
   border-color: white;
   box-shadow: 0px 0px 20px 5px white;
