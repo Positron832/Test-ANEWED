@@ -37,6 +37,7 @@
         animation: animation2 5s infinite linear alternate;
         transition: transform 3s ease-out, border-color 1s ease-out, box-shadow 3s linear, color 2s linear, text-shadow 3s linear; 
         font-family: serif;
+        display: block;
       }
       
       button#start:hover{
