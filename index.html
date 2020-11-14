@@ -24,17 +24,17 @@
     <p id="credit">©Positron832 2020</p>
     
     
-    <h1 id="stage1">Once upon a time...<br/>There was a war against you castle..<br/>You we're doing good, but you could choose to lose anyway.</h1>
-    <button id="buttonStage1" type="button" onclick="stage2()">Continue</button>
+    <h1 id="stage1" style="display:none;">Once upon a time...<br/>There was a war against you castle..<br/>You we're doing good, but you could choose to lose anyway.</h1>
+    <button id="buttonStage1" type="button" onclick="stage2()" style="display:none;">Continue</button>
       
     <script>
     "strict mode"
       function stage1(){
         document.getElementById("screen").style.backgroundImage="radial-gradient(circle, lightBlue, dodgerBlue)";
         document.getElementById("title").style.display="none";
-        document.getElememtById("stage1").style.display="block";
-        document.getElementById("credit").style.display="none";
         document.getElememtById("buttonTitle").style.display="none";
+        document.getElementById("credit").style.display="none";
+        document.getElememtById("stage1").style.display="block";
         document.getElementById("buttonStage1").style.display="block";
       }
     </script>
