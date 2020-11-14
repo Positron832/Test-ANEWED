@@ -1,62 +1,61 @@
-
-      html{
-        min-height: 100%;
-      }
+html{
+  min-height: 100%;
+}
       
-      body{
-        background-image: linear-gradient(deepSkyBlue, dodgerBlue, blue, green);
-        text-align: center;
-        text-decoration: none;
-        font-family: serif;
-        color: black;
-        min-height: 100%;
-        user-select: none;
-      }
+body{
+  background-image: linear-gradient(deepSkyBlue, dodgerBlue, blue, green);
+  text-align: center;
+  text-decoration: none;
+  font-family: serif;
+  color: black;
+  min-height: 100%;
+  user-select: none;
+}
       
-      h1#title{
-        font-size: 10vw;
-        animation: animation1 1.5s infinite alternate;
-        transform: rotateY(20deg);
-        text-shadow: 0px 0px 11px white;
-      }
+h1#title{
+  font-size: 10vw;
+  animation: animation1 1.5s infinite alternate;
+  transform: rotateY(20deg);
+  text-shadow: 0px 0px 11px white;
+}
       
-      p#credit{
-        margin-bottom: auto;
-        font-size: 5vw;
-      }
+p#credit{
+  margin-bottom: auto;
+  font-size: 5vw;
+}
       
-      button#start{
-        cursor: pointer;
-        font-size: 5vw;
-        padding: 15px;
-        margin: auto;
-        border: 2px black solid;
-        background-image: linear-gradient(to bottom left, white, darkBlue);
-        background-size: 400%;
-        background-position: left;
-        animation: animation2 5s infinite linear alternate;
-        transition: transform 3s ease-out, border-color 1s ease-out, box-shadow 3s linear, color 2s linear, text-shadow 3s linear; 
-        font-family: serif;
-        display: block;
-      }
+button#start{
+  cursor: pointer;
+  font-size: 5vw;
+  padding: 15px;
+  margin: auto;
+  border: 2px black solid;
+  background-image: linear-gradient(to bottom left, white, darkBlue);
+  background-size: 400%;
+  background-position: left;
+  animation: animation2 5s infinite linear alternate;
+  transition: transform 3s ease-out, border-color 1s ease-out, box-shadow 3s linear, color 2s linear, text-shadow 3s linear; 
+  font-family: serif;
+  display: block;
+}
       
-      button#start:hover{
-       transform: rotate(1440deg);
-       border-color: white;
-       box-shadow: 0px 0px 20px 5px white;
-       color: white;
-       text-shadow: 0px 0px 7px white;
-     }
+button#start:hover{
+  transform: rotate(1440deg);
+  border-color: white;
+  box-shadow: 0px 0px 20px 5px white;
+  color: white;
+  text-shadow: 0px 0px 7px white;
+}
       
-      @keyframes animation1{
-        0%{transform: scale(1, 1);}
-        100%{transform: scale(0.85, 1.15);}
-      }
+@keyframes animation1{
+  0%{transform: scale(1, 1);}
+  100%{transform: scale(0.85, 1.15);}
+}
       
-      @keyframes animation2{
-        0%{background-position: left;}
-        100%{background-position: right;}
-      }
+@keyframes animation2{
+  0%{background-position: left;}
+  100%{background-position: right;}
+}
 
 button{
   display: none;
