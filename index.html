@@ -19,23 +19,23 @@
       </b>
     </h1>
     
-    <button id="start" type="button" onclick="stage1()" style="display:block;">START</button>
+    <button id="buttonTitle" type="button" onclick="stage1()" style="display:block;">START</button>
     
     <p id="credit">©Positron832 2020</p>
     
     
     <h1 id="stage1">Once upon a time...<br/>There was a war against you castle..<br/>You we're doing good, but you could choose to lose anyway.</h1>
-    <button id="continue" type="button" onclick="stage2()">Continue</button>
+    <button id="buttonStage1" type="button" onclick="stage2()">Continue</button>
       
     <script>
     "strict mode"
       function stage1(){
         document.getElementById("screen").style.backgroundImage="radial-gradient(circle, lightBlue, dodgerBlue)";
         document.getElementById("title").style.display="none";
-        document.getElememtById("start").style.display="none";
+        document.getElememtById("buttonTitle").style.display="none";
         document.getElementById("credit").style.display="none";
         document.getElememtById("stage1").style.display="block";
-        document.getElementById("continue").style.display="block";
+        document.getElementById("buttonStage1").style.display="block";
       }
     </script>
   </body>
