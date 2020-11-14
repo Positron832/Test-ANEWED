@@ -19,13 +19,13 @@
       </b>
     </h1>
     
-    <button id="start" type="button" onclick="stage1()">START</button>
+    <button id="start" type="button" onclick="stage1()" style="display:block;">START</button>
     
-    <p id="credit">©RobTop Games 2007</p>
+    <p id="credit">©Positron832 2020</p>
     
     
     <h1 id="stage1">Once upon a time...<br/>There was a war against you castle..<br/>You we're doing good, but you could choose to lose anyway.</h1>
-    <button type="button" onclick="">Continue</button>
+    <button id="continue" type="button" onclick="stage2()">Continue</button>
       
     <script>
     "strict mode"
@@ -35,7 +35,7 @@
         document.getElememtById("start").style.display="none";
         document.getElementById("credit").style.display="none";
         document.getElememtById("stage1").style.display="block";
-        //document.getElementById("").style.display="block";
+        document.getElementById("continue").style.display="block";
       }
     </script>
   </body>
