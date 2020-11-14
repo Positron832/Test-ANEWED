@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
   </head>
-  <body>
+  <body id="screen">
     <h1 id="title">
       <b>Test:
       <span style="color:#ff0000;"> A</span>
@@ -19,8 +19,19 @@
       </b>
     </h1>
     
-    <button id="start" type="button" onclick="document.location='stage1.html'">START</button>
+    <button id="start" type="button" onclick="stage1()">START</button>
     
     <p id="credit">Made by Positron832, 2020.</p>
+    
+    
+    <h1 id="stage1">Once upon a time...<br/>There was a war against you castle..<br/>You we're doing good, but you could choose to lose anyway.</h1>
+    <button type="button" onclick="">Continue</button>
+      
+    <script>
+    "strict mode"
+      function stage1(){
+        document.getElementById("screen").style.backgroundImage="radial-gradient";
+      }
+    </script>
   </body>
 </html>
