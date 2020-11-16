@@ -8,4 +8,5 @@
 * Nest elements properly:
   * Example: `<p>This is a very long sentence <b>depending on who you ask.</b></p>`,
 * Use camelCase,
-* Always check if the code works properly.
+* Always check if the code works properly,
+* `<html>` must not have indentation after `<!DOCTYPE html>`.
