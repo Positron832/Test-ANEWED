@@ -36,7 +36,7 @@ button#buttonTitle{
   animation: animation2 5s infinite linear alternate;
   transition: transform 3s ease-out, border-color 1s ease-out, box-shadow 3s linear, color 2s linear, text-shadow 3s linear; 
   font-family: serif;
-  box-shadow: 0;
+  box-shadow: 0px 0px;
 }
       
 button#buttonTitle:hover{
