@@ -70,7 +70,8 @@ button{
 }
 
 button:hover{
-  
+  border-color: white;
+  box-shadow: 0px 0px 10px 2px white;
 }
 
 h1#stage1{
