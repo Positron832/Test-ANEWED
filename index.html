@@ -28,7 +28,7 @@
     <button id="buttonStage1" type="button" onclick="stage2()" style="display:none;">Continue</button>
     
     <h1 id="stage2" style="display:none;">Win the war?</h1>
-    <button class="yes" style="display:none;">Yes</button> <button class="no" style="display:none;">No</button>
+    <button id="yes" style="display:none;">Yes</button> <button id="no" style="display:none;">No</button>
     
     <script>
     "strict mode"
@@ -45,8 +45,8 @@
         document.getElementById("stage1").style.display="none";
         document.getElementById("buttonStage1").style.display="none";
         document.getElementById("stage2").style.display="block";
-        document.getElementsByClass("yes").style.display="block";
-        document.getElementsByClass("no").style.display="block";
+        document.getElementById("yes").style.display="block";
+        document.getElementById("no").style.display="block";
       }
     </script>
   </body>
