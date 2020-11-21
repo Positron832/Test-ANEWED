@@ -29,7 +29,7 @@
     
     <h1 id="stage2" style="display:none;">Win the war?</h1>
     <button id="yes" style="display:none;" onclick="win()">Yes</button> <button id="no" style="display:none;" onclick="lost()">No</button>
-    <button id="continue" style="display:none;" onclick="stage3()">Continue</button>
+    <button id="buttonStage2" style="display:none;" onclick="stage3()">Continue</button>
     
     <script>
     "strict mode"
@@ -62,6 +62,12 @@
         document.getElementById("yes").style.display="none";
         document.getElementById("no").style.display="none";
       }
+      
+      function stage3(){
+        document.getElementById("stage2").style.display="none";
+        document.getElementById("buttonStage2").style.display="none";
+        //document.getElementById("").style.display="block";
+        //document.getElementById("").style.display="block";
     </script>
   </body>
 </html>
