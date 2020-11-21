@@ -77,15 +77,13 @@ button:hover{
 
 button#yes{
   background-image: linear-gradient(lightGreen, green);
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   position: relative;
 }
 
 button#no{
   background-image: linear-gradient(orange, red);
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   position: relative;
 }
 
