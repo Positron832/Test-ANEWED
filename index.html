@@ -28,7 +28,8 @@
     <button id="buttonStage1" type="button" onclick="stage2()" style="display:none;">Continue</button>
     
     <h1 id="stage2" style="display:none;">Win the war?</h1>
-    <button id="yes" style="display:none;" onclick="lost()">Yes</button> <button id="no" style="display:none;" onclick="win()">No</button>
+    <button id="yes" style="display:none;" onclick="win()">Yes</button> <button id="no" style="display:none;" onclick="lost()">No</button>
+    <button id="continue" style="display:none;" onclick="stage3()">Continue</button>
     
     <script>
     "strict mode"
@@ -51,10 +52,15 @@
       
       function lost(){
         document.getElementById("stage2").innerHTML="You lost the war and had to flee to France!";
+        document.getElementById("yes").style.display="none";
+        document.getElementById("no").style.display="none";
+        document.getElementById("buttonStage2").display="block";
       }
       
       function win(){
         document.getElementById("stage2").innerHTML="You won the war and lived happily ever after!";
+        document.getElementById("yes").style.display="none";
+        document.getElementById("no").style.display="none";
       }
     </script>
   </body>
