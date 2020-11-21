@@ -75,13 +75,13 @@ button:hover{
   box-shadow: 0px 0px 10px 2px white;
 }
 
-button.yes{
+button#yes{
   background-image: linear-gradient(green, darkGreen);
   margin-left: auto;
   margin-right: auto;
 }
 
-button.no{
+button#no{
   background-image: linear-gradient(orange, red);
   margin-left: auto;
   margin-right: auto;
