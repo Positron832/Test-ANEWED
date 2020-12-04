@@ -31,6 +31,9 @@
     <button id="yes" style="display:none;" onclick="win()">Yes</button> <button id="no" style="display:none;" onclick="lost()">No</button>
     <button id="buttonStage2" style="display:none;" onclick="stage3()">Continue</button>
     
+    <h1 id="stage3">When you arrived to France you already could speak French, because you were raised in a wealthy family</h1>
+    <button id="buttonStage3" style="display:none:" onclick="hired()">Get hired</button>
+    
     <script>
     "strict mode"
       function stage1(){
@@ -66,8 +69,8 @@
       function stage3(){
         document.getElementById("stage2").style.display="none";
         document.getElementById("buttonStage2").style.display="none";
-        //document.getElementById("").style.display="block";
-        //document.getElementById("").style.display="block";
+        document.getElementById("stage3").style.display="block";
+        document.getElementById("buttonStage3").style.display="block";
       }
     </script>
   </body>
