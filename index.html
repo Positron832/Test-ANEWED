@@ -34,44 +34,61 @@
     <h1 id="stage3" style="display:none;">When you arrived to France you already could speak French, because you were raised in a wealthy family</h1>
     <button id="buttonStage3" style="display:none;" onclick="hired()">Get hired</button>
     
+    <h1 id="hired" style="display:none;">You got hired, at the kings castle!</h1>
+    <button id="buttonKill" style="display:none;" onclick="kill()">Kill the king</button>
+    
     <script>
     "strict mode"
-      function stage1(){
-        document.getElementById("screen").style.backgroundImage="radial-gradient(circle, lightBlue, dodgerBlue)";
-        document.getElementById("title").style.display="none";
-        document.getElementById("start").style.display="none";
-        document.getElementById("credit").style.display="none";
-        document.getElementById("stage1").style.display="block";
-        document.getElementById("buttonStage1").style.display="block";
+      function stage1() {
+        document.getElementById("screen").style.backgroundImage = "radial-gradient(circle, lightBlue, dodgerBlue)";
+        document.getElementById("title").style.display = "none";
+        document.getElementById("start").style.display = "none";
+        document.getElementById("credit").style.display = "none";
+        document.getElementById("stage1").style.display = "block";
+        document.getElementById("buttonStage1").style.display = "block";
       }
       
-      function stage2(){
-        document.getElementById("stage1").style.display="none";
-        document.getElementById("buttonStage1").style.display="none";
-        document.getElementById("stage2").style.display="block";
-        document.getElementById("yes").style.display="block";
-        document.getElementById("no").style.display="block";
+      function stage2() {
+        document.getElementById("stage1").style.display = "none";
+        document.getElementById("buttonStage1").style.display = "none";
+        document.getElementById("stage2").style.display = "block";
+        document.getElementById("yes").style.display = "block";
+        document.getElementById("no").style.display = "block";
       }
       
-      function lost(){
-        document.getElementById("stage2").innerHTML="You lost the war and had to flee to France!";
-        document.getElementById("yes").style.display="none";
-        document.getElementById("no").style.display="none";
-        document.getElementById("buttonStage2").style.display="block";
+      function lost() {
+        document.getElementById("stage2").innerHTML = "You lost the war and had to flee to France!";
+        document.getElementById("yes").style.display = "none";
+        document.getElementById("no").style.display = "none";
+        document.getElementById("buttonStage2").style.display = "block";
       }
       
-      function win(){
-        document.getElementById("stage2").innerHTML="You won the war and lived happily ever after!";
-        document.getElementById("yes").style.display="none";
-        document.getElementById("no").style.display="none";
+      function win() {
+        document.getElementById("stage2").innerHTML = "You won the war and lived happily ever after!";
+        document.getElementById("yes").style.display = "none";
+        document.getElementById("no").style.display = "none";
       }
       
-      function stage3(){
-        document.getElementById("stage2").style.display="none";
-        document.getElementById("buttonStage2").style.display="none";
-        document.getElementById("stage3").style.display="block";
-        document.getElementById("buttonStage3").style.display="block";
+      function stage3() {
+        document.getElementById("stage2").style.display = "none";
+        document.getElementById("buttonStage2").style.display = "none";
+        document.getElementById("stage3").style.display = "block";
+        document.getElementById("buttonStage3").style.display = "block";
       }
+      
+      function hired() {
+        document.getElementById("stage3").style.display = "none";
+        document.getElementById("buttonStage3").style.display = "none";
+        document.getElementById("hired").style.display = "block";
+        document.getElementById("buttonKill").style.display = "block";
+      }
+      
+      /*function kill() {
+        document.getElementById("stage3").style.display = "none";
+        document.getElementById("stage3").style.display = "none";
+        document.getElementById("stage3").style.display = "none";
+        document.getElementById("stage3").style.display = "none";
+      }*/
     </script>
   </body>
 </html>
