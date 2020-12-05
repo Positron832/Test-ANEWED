@@ -1,7 +1,7 @@
 # If you edit in this repoitory:
 * Use two space indentation,
 * Use strict mode for JavaScript:
-  * write `"strict mode"` under `<script>`,
+  * write `"strict mode"` under `<script>` (no indentation),
 * Always close empty elements:
   * `<br>` should be written as `<br/>`,
 * Never skip optional elements like `<!DOCTYPE html>`, and `<head>`,
