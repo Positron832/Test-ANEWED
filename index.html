@@ -29,13 +29,26 @@
     
     <h1 id="stage2" style="display:none;">Win the war?</h1>
     <button id="yes" style="display:none;" onclick="win()">Yes</button> <button id="no" style="display:none;" onclick="lost()">No</button>
-    <button id="buttonStage2" style="display:none;" onclick="stage3()">Continue</button>
+    <button id="buttonStage2" type="button" style="display:none;" onclick="stage3()">Continue</button>
     
     <h1 id="stage3" style="display:none;">When you arrived to France you already could speak French, because you were raised in a wealthy family</h1>
-    <button id="buttonStage3" style="display:none;" onclick="hired()">Get hired</button>
+    <button id="buttonStage3" type="button" style="display:none;" onclick="hired()">Get hired</button>
     
     <h1 id="hired" style="display:none;">You got hired, at the kings castle!</h1>
-    <button id="buttonKill" style="display:none;" onclick="kill()">Kill the king</button>
+    <button id="buttonKill" type="button" style="display:none;" onclick="kill()">Kill the king</button>
+    
+    <h1 id="stage4" style="display:none;">You now own France!</h1>
+    <button id="buttonStage4" type="button" style="display:none;" onclick="attackGe()">Attack Germany!!!</button>
+    
+    <h1 id="stage5" style="display:none;">You have become just like Hitler?!?</h1>
+    <button id="buttonStage5" type="button" onclick="attackPo()">Take Poland!!!!!</button>
+    
+    <h1 id="stage6" style="display:none;">After getting more and more power...</br>You've become addicted to power.....</h1>
+    <button id="buttonStage6" type="button" onclick="attackSe()" style="display:none;">MORE POWER!! fight Sweden!!!!!</button>
+    
+    <h1 id="stage7" style="display:none;">"OMG U ARE NOT NICE!!!<br/>We call Russia on u!!"<br/>-Sweden</h1>
+    <button id="retreat" type="button" onclick="retreat()" style="display:none;">Leave Sweden to survive Russia</button>
+    <button id="attackRu" type="button" onclick="attackRu()" style="display:none;">ATTACC RUSSIA!!!!!!!!!!</button>
     
     <script>
     "strict mode"
@@ -83,12 +96,40 @@
         document.getElementById("buttonKill").style.display = "block";
       }
       
-      /*function kill() {
-        document.getElementById("stage3").style.display = "none";
-        document.getElementById("stage3").style.display = "none";
-        document.getElementById("stage3").style.display = "none";
-        document.getElementById("stage3").style.display = "none";
-      }*/
+      function kill() {
+        document.getElementById("hired").style.display = "none";
+        document.getElementById("buttonKill").style.display = "none";
+        document.getElementById("stage4").style.display = "block";
+        document.getElementById("buttonStage4").style.display = "block";
+      }
+      
+      function attackGe() {
+        document.getElementById("stage4").style.display = "none";
+        document.getElementById("buttonStage4").style.display = "none";
+        document.getElementById("stage5").style.display = "block";
+        document.getElementById("buttonStage5").style.display = "block";
+      }
+      
+      function attackPo() {
+        document.getElementById("stage5").style.display = "none";
+        document.getElementById("buttonStage5").style.display = "none";
+        document.getElementById("stage6").style.display = "block";
+        document.getElementById("buttonStage6").style.display = "block";
+      }
+      
+      function attackSe() {
+        document.getElementById("stage6").style.display = "none";
+        document.getElementById("buttonStage6").style.display = "none";
+        document.getElementById("stage7").style.display = "block";
+        document.getElementById("buttonStage7").style.display = "block";
+      }
+      
+      function retreat() {
+        document.getElementById("stage4").style.display = "none";
+        document.getElementById("buttonStage4").style.display = "none";
+        document.getElementById("stage5").style.display = "block";
+        document.getElementById("buttonStage5").style.display = "block";
+      }
     </script>
   </body>
 </html>
