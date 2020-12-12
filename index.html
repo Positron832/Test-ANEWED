@@ -41,7 +41,7 @@
     <button id="buttonStage4" type="button" style="display:none;" onclick="attackGe()">Attack Germany!!!</button>
     
     <h1 id="stage5" style="display:none;">You have become just like Hitler?!?</h1>
-    <button id="buttonStage5" type="button" onclick="attackPo()">Take Poland!!!!!</button>
+    <button id="buttonStage5" type="button" style="display:none;" onclick="attackPo()">Take Poland!!!!!</button>
     
     <h1 id="stage6" style="display:none;">After getting more and more power...</br>You've become addicted to power.....</h1>
     <button id="buttonStage6" type="button" onclick="attackSe()" style="display:none;">MORE POWER!! fight Sweden!!!!!</button>
@@ -120,14 +120,21 @@
       function attackSe() {
         document.getElementById("stage6").style.display = "none";
         document.getElementById("buttonStage6").style.display = "none";
-        document.getElementById("stage7").style.display = "block";
-        document.getElementById("buttonStage7").style.display = "block";
+        document.getElementById("retreat").style.display = "block";
+        document.getElementById("attackRu").style.display = "block";
       }
       
       function retreat() {
-        document.getElementById("stage4").style.display = "none";
-        document.getElementById("buttonStage4").style.display = "none";
-        document.getElementById("stage5").style.display = "block";
+        document.getElementById("retreat").style.display = "none";
+        document.getElementById("attackRu").style.display = "none";
+        document.getElementById("").style.display = "block";
+        document.getElementById("").style.display = "block";
+      }
+      
+      function attackRu() {
+        document.getElementById("retreat").style.display = "none";
+        document.getElementById("attackRu").style.display = "none";
+        document.getElementById("").style.display = "block";
         document.getElementById("buttonStage5").style.display = "block";
       }
     </script>
