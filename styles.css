@@ -68,6 +68,7 @@ button {
   border: 2px black solid;
   transition: border-color 0.5s, box-shadow 0.5s linear;
   color: black;
+  display: none;
 }
 
 button:hover {
@@ -79,13 +80,11 @@ button#yes {
   background-image: linear-gradient(lightGreen, green);
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
 button#no {
   background-image: linear-gradient(orange, red);
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
