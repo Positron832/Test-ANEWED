@@ -51,6 +51,10 @@
     <button id="retreat" type="button" onclick="retreat()">Leave Sweden to survive Russia</button>
     <button id="attackRu" type="button" onclick="attackRu()">ATTACC RUSSIA!!!!!!!!!!</button>
     
+    <h1 id="leaveSe" style="display:none;">Russia attacked anyway and killed you.</h1>
+    
+    <h1 id="nuke" style="display:none;">You took Russia? Cool. Just don't nuke everything...</h1>
+    
     <script>
     "strict mode"
       function stage1() {
@@ -130,17 +134,16 @@
         document.getElementById("retreat").style.display = "none";
         document.getElementById("attackRu").style.display = "none";
         document.getElementById("stage7").style.display = "none";
-        document.getElementById("").style.display = "block";
-        document.getElementById("").style.display = "block";
+        document.getElementById("leaveSe").style.display = "block";
       }
       
       function attackRu() {
         document.getElementById("retreat").style.display = "none";
         document.getElementById("attackRu").style.display = "none";
         document.getElementById("stage7").style.display = "none";
-        document.getElementById("").style.display = "block";
-        document.getElementById("").style.display = "block";
+        document.getElementById("nuke").style.display = "block";
       }
     </script>
+    <noscript>JavaScript isn't working, have you turned it off?</noscript>
   </body>
 </html>
