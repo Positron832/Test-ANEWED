@@ -54,7 +54,9 @@
     <h1 id="leaveSe" style="display:none;">Russia attacked anyway and killed you.</h1>
     
     <h1 id="nuke" style="display:none;">You took Russia? Cool. Just don't nuke everything...</h1>
+    <button id="buttonNuke" type="button" onclick="nuke()">NUKE USA.</button>
     
+    <!--script src="script.js"></script-->
     <script>
     "strict mode"
       function stage1() {
@@ -142,6 +144,14 @@
         document.getElementById("attackRu").style.display = "none";
         document.getElementById("stage7").style.display = "none";
         document.getElementById("nuke").style.display = "block";
+        document.getElementById("buttonNuke").style.display = "block";
+      }
+      
+      function nuke() {
+        document.getElementById("nuke").style.display = "none";
+        document.getElementById("buttonNuke").style.display ="none;
+        document.getElementById("nuke2").style.display = "block";
+        document.getElementById("buttonNuke2").style.display = "block";
       }
     </script>
     <noscript>JavaScript isn't working, have you turned it off?</noscript>
