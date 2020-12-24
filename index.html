@@ -59,6 +59,10 @@
     <h1 id="nukeUs">Take over the world?</h1>
     <button id="buttonNukeUs" type="button" onclick="nukeUs">Oui</button>
     
+    <h1 id="victory">You are now the one and only: the dictator!<br/>Everyone loves you!<br/>Everyone supports what you do!<br/>
+      The ones that don't don't deserve to live!</h1>
+    <button id="restart" type="button" onclick="restart()">Play again</button>
+    
     <!--script src="script.js"></script-->
     <script>
     "strict mode"
@@ -165,6 +169,15 @@
         document.getElementById("buttonNukeUs").style.display = "none";
         document.getElementById("victory").style.display = "block";
         document.getElementById("restart").style.display = "block";
+      }
+      
+      function restart() {
+        document.getElementById("screen").style.backgroundImage = "linear-gradient()";
+        document.getElementById("victory").style.display = "none";
+        document.getElementById("restart").style.display = "none";
+        document.getElementById("start").style.display = "block";
+        document.getElementById("title").style.display = "block";
+        document.getElementById("credit").style.display = "block";
       }
     </script>
     <noscript>JavaScript isn't working, have you turned it off?</noscript>
