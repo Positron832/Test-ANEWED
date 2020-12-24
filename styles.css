@@ -27,6 +27,10 @@ p#credit {
   margin-bottom: auto;
   font-size: 4vw;
 }
+
+p#credit a {
+  color: orange;
+}
       
 button#start {
   padding: 15px;
