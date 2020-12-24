@@ -82,11 +82,11 @@ button:hover {
   box-shadow: 0px 0px 10px 2px white;
 }
 
-button#yes {
+button#yes,button#retreat {
   background-image: linear-gradient(lightGreen, green);
 }
 
-button#no {
+button#no,button#attackRu {
   background-image: linear-gradient(orange, red);
 }
 
