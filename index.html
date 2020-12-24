@@ -63,7 +63,8 @@
       The ones that don't don't deserve to live!</h1>
     <button id="restart" type="button" onclick="restart()">Play again</button>
     
-    <audio src="https://audio-download.ngfiles.com/17000/17256_newgrounds_boom_b.mp3?f1121442003" controls autoplay loop></audio>
+    <audio src="https://audio-download.ngfiles.com/17000/17256_newgrounds_boom_b.mp3?f1121442003" type="media/mpeg" controls autoplay loop>
+      Your browser does not support the HTML5 audio element.</audio>
     
     <!--script src="script.js"></script-->
     <script>
@@ -96,6 +97,7 @@
         document.getElementById("stage2").innerHTML = "You won the war and lived happily ever after!";
         document.getElementById("yes").style.display = "none";
         document.getElementById("no").style.display = "none";
+        document.getElementById("screen").style.backgroundImage = "linear-gradient(20deg, red, lime, blue, yellow, green, purple)";
         document.getElementById("restart").style.display = "block";
       }
       
@@ -148,6 +150,7 @@
         document.getElementById("stage7").style.display = "none";
         document.getElementById("leaveSe").style.display = "block";
         document.getElementById("restart").style.display = "block";
+        documemt.getElementById("screen").style.backgroundImage = "linear-gradient(red, darkRed)";
       }
       
       function attackRu() {
@@ -185,6 +188,7 @@
         document.getElementById("victory").style.display = "none";
         document.getElementById("restart").style.display = "none";
         document.getElementById("stage2").style.display = "none";
+        documemt.getElementById("leaveSe").style.display = "none";
         document.getElementById("retreat").style.display = "none";
         document.getElementById("start").style.display = "block";
         document.getElementById("title").style.display = "block";
