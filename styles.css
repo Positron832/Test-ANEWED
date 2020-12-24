@@ -88,8 +88,7 @@ button#no {
 
 button#buttonNukeUs, button#restart {
   box-shadow: 0px 0px;
-  color: white;
-  text-shadow: 0px 0px 7px white;
+  background-image: linear-gradient(lightGrey, yellow);
 }
 
 audio {
