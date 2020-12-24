@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
-    </head>
+  </head>
 
   <body id="screen">
     <h1 id="title" style="display: block;">
@@ -94,6 +94,7 @@
         document.getElementById("stage2").innerHTML = "You won the war and lived happily ever after!";
         document.getElementById("yes").style.display = "none";
         document.getElementById("no").style.display = "none";
+        document.getElementById("restart").style.display = "block";
       }
       
       function stage3() {
@@ -144,6 +145,7 @@
         document.getElementById("attackRu").style.display = "none";
         document.getElementById("stage7").style.display = "none";
         document.getElementById("leaveSe").style.display = "block";
+        document.getElementById("restart").style.display = "block";
       }
       
       function attackRu() {
