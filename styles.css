@@ -97,6 +97,6 @@ audio {
   bottom: 0;
   width: 250px;
   height: 50px;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 25px;
   background-color: ghostWhite;
 }
