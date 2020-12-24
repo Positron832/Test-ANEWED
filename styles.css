@@ -27,9 +27,7 @@ p#credit {
   text-align: center;
   position: absolute;
   bottom: 7px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  right: 3.5px;
   font-size: 4vw;
   display: inline;
 }
