@@ -56,6 +56,9 @@
     <h1 id="nuke">You took Russia? Cool. Just don't nuke everything...</h1>
     <button id="buttonNuke" type="button" onclick="nuke()">NUKE USA.</button>
     
+    <h1 id="nukeUs">Take over the world?</h1>
+    <button id="buttonNukeUs" type="button" onclick="nukeUs">Oui</button>
+    
     <!--script src="script.js"></script-->
     <script>
     "strict mode"
@@ -150,8 +153,18 @@
       function nuke() {
         document.getElementById("nuke").style.display = "none";
         document.getElementById("buttonNuke").style.display ="none";
-        document.getElementById("nuke2").style.display = "block";
-        document.getElementById("buttonNuke2").style.display = "block";
+        document.getElementById("nukeUs").style.display = "block";
+        document.getElementById("buttonNukeUs").style.display = "block";
+        document.getElementById("screen").style.backgroundImage = "radial-gradient(darkred, darkSlateGrey)";
+        document.getElementById("screen").style.color = "white";
+        document.getElementById("screen").style.textShadow = "0px 0px 7px white";
+      }
+      
+      function nukeUs() {
+        document.getElementById("nukeUs").style.display = "none";
+        document.getElementById("buttonNukeUs").style.display = "none";
+        document.getElementById("victory").style.display = "block";
+        document.getElementById("restart").style.display = "block";
       }
     </script>
     <noscript>JavaScript isn't working, have you turned it off?</noscript>
