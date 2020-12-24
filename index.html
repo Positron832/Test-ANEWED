@@ -22,7 +22,7 @@
     
     <button id="start" type="button" onclick="stage1()">START</button>
     
-    <p id="credit">©Positron832 2020</p>
+    <p id="credit">Music by Waterflame</p>
     
     
     <h1 id="stage1" style="display:none; line-height:2;">Once upon a time...<br/>There was a war against your castle..<br/>You we're doing good, but you could choose to lose anyway.</h1>
@@ -63,7 +63,7 @@
       The ones that don't don't deserve to live!</h1>
     <button id="restart" type="button" onclick="restart()">Play again</button>
     
-    <audio src="https://audio-download.ngfiles.com/17000/17256_newgrounds_boom_b.mp3?f1121442003" controls autoplay></audio>
+    <audio src="https://audio-download.ngfiles.com/17000/17256_newgrounds_boom_b.mp3?f1121442003" controls autoplay loop></audio>
     
     <!--script src="script.js"></script-->
     <script>
@@ -81,8 +81,8 @@
         document.getElementById("stage1").style.display = "none";
         document.getElementById("buttonStage1").style.display = "none";
         document.getElementById("stage2").style.display = "block";
-        document.getElementById("yes").style.display = "block";
-        document.getElementById("no").style.display = "block";
+        document.getElementById("yes").style.display = "inline";
+        document.getElementById("no").style.display = "inline";
       }
       
       function lost() {
