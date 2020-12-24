@@ -97,7 +97,8 @@ audio {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100px;
-  height: 15px;
+  width: 125px;
+  height: 30px;
   border-radius: 0px;
+  background-color: cyan;
 }
