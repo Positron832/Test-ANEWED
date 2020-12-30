@@ -33,7 +33,7 @@
     <button id="yes" style="display:none;" onclick="win()">Yes</button> <button id="no" onclick="lost()">No</button>
     <button id="buttonStage2" type="button" onclick="stage3()">Continue</button>
     
-    <h1 id="stage3">When you arrived to France you already could speak French, because you were raised in a wealthy family</h1>
+    <h1 id="stage3">When you arrived to France you already could speak French, because you were raised in a wealthy family.</h1>
     <button id="buttonStage3" type="button" onclick="hired()">Get hired</button>
     
     <h1 id="hired">You got hired, at the kings castle!</h1>
@@ -124,6 +124,7 @@
       }
       
       function attackGe() {
+        document.getElementById("screen").style.backgroundImage = "radial-gradient(circle, red, blue)";
         document.getElementById("stage4").style.display = "none";
         document.getElementById("buttonStage4").style.display = "none";
         document.getElementById("stage5").style.display = "block";
