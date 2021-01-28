@@ -112,7 +112,7 @@
     document.getElementById("restart").style.textShadow = "0px 0px 7px white";
   }
   
-  function restart() {↩
+  function restart() {
     document.getElementById("screen").style.backgroundImage = "linear-gradient(deepSkyBlue, dodgerBlue, blue, green)";
     document.getElementById("screen").style.color = "black";
     document.getElementById("screen").style.textShadow = "0px 0px";
