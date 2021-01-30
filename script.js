@@ -1,4 +1,4 @@
-"strict mode"
+
   function stage1() {
     document.getElementById("screen").style.backgroundImage = "radial-gradient(circle, lightBlue, dodgerBlue)";
     document.getElementById("title").style.display = "none";
@@ -54,7 +54,7 @@
   
    function attackGe() {
     document.getElementById("screen").style.backgroundImage = "radial-gradient(circle, red, darkBlue)";
-    document.getElementById("stage4").style.display = "none";↩
+    document.getElementById("stage4").style.display = "none";
     document.getElementById("buttonStage4").style.display = "none";
     document.getElementById("stage5").style.display = "block";
     document.getElementById("buttonStage5").style.display = "block";
