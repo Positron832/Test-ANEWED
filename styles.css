@@ -21,7 +21,7 @@ h1#title {
 
 h1 {
   display: none;
-  font-size: 7vw;
+  font-size: 150%;
 }
       
 p#credit {
@@ -36,7 +36,7 @@ p#credit a {
       
 button#start {
   padding: 15px;
-  border: 2vw black solid;
+  border: 2px black solid;
   background-image: linear-gradient(to bottom left, white, darkBlue);
   background-size: 400%;
   background-position: left;
@@ -70,10 +70,10 @@ button {
   font-family: 'Times New Roman';
   text-decoration: none;
   margin: 10px auto;
-  padding: auto 1vw;
+  padding: auto 5px;
   background-image: linear-gradient(lightBlue,dodgerBlue);
   box-shadow: 9px 9px 4.5px rgba(0,0,0,0.25);
-  border: 1vw black solid;
+  border: 2px black solid;
   transition: border-color 0.5s, box-shadow 0.5s linear;
   color: black;
   position: relative;
