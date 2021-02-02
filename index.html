@@ -4,16 +4,18 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none'"/>
-    <!--meta http-equiv="Content-Security-Policy" content="object-src 'self'"/>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'"/>
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'self'"/>
-    <meta http-equiv="Content-Security-Policy" content="form-action 'self'"/>
-    <meta http-equiv="Content-Security-Policy" content="style-src 'self'"/>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/-->
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';
+    object-src 'none';
+    default-src 'none';
+    base-uri 'none';
+    form-action 'self';
+    font-src 'self';
+    style-src 'self' 'unsafe-inline';
+    script-src 'self' 'unsafe-inline'"/>
     <meta name="referrer" content="same-origin"/>
     
     <title>Test: ANEWED</title>
-    <link rel="stylesheet" href="styles.css" media="all"/>
+    <link rel="stylesheet" href="styles.css" media="all" type="text/css"/>
     <link rel="icon" href="favicon.png" type="image/png"/>
   </head>
 
