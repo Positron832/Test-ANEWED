@@ -85,6 +85,10 @@ button:hover {
   box-shadow: 0 0 10px 2px white;
 }
 
+button:focus {
+  outline: none;
+}
+
 button#yes,button#retreat {
   background-image: linear-gradient(lightGreen, green);
 }
