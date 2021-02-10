@@ -1,4 +1,4 @@
-"strict mode"
+"strict mode";
   function stage1() {
     document.getElementById("screen").style.backgroundImage = "radial-gradient(circle, lightBlue, dodgerBlue)";
     document.getElementById("title").style.display = "none";
