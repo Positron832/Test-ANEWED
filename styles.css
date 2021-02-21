@@ -110,5 +110,5 @@ audio {
   height: 50px;
   border-top-right-radius: 25px;
   background-color: ghostWhite;
-  display: inline;
+  display: inline-block;
 }
