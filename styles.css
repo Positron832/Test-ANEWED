@@ -6,7 +6,7 @@ body {
   background-image: linear-gradient(deepSkyBlue, dodgerBlue, blue, green);
   text-align: center;
   text-decoration: none;
-  font-family: 'Times New Roman';
+  font-family: 'Times New Roman',serif;
   color: black;
   min-height: 100%;
   user-select: none;
@@ -21,12 +21,12 @@ h1#title {
 
 h1 {
   display: none;
-  font-size: 7vw;
+  font-size: 250%;
 }
       
 p#credit {
   margin-bottom: 7px;
-  font-size: 4vw;
+  font-size: 200%;
   display: inline;
 }
 
@@ -36,7 +36,7 @@ p#credit a {
       
 button#start {
   padding: 15px;
-  border: 2vw black solid;
+  border: 4px black solid;
   background-image: linear-gradient(to bottom left, white, darkBlue);
   background-size: 400%;
   background-position: left;
@@ -66,14 +66,14 @@ button#start:hover {
 
 button {
   cursor: pointer;
-  font-size: 5vw;
-  font-family: 'Times New Roman';
+  font-size: 300%;
+  font-family: 'Times New Roman',serif;
   text-decoration: none;
   margin: 10px auto;
-  padding: auto 1vw;
+  padding: 5px auto;
   background-image: linear-gradient(lightBlue,dodgerBlue);
   box-shadow: 9px 9px 4.5px rgba(0,0,0,0.25);
-  border: 1vw black solid;
+  border: 2px black solid;
   transition: border-color 0.5s, box-shadow 0.5s linear;
   color: black;
   position: relative;
@@ -83,6 +83,10 @@ button {
 button:hover {
   border-color: white;
   box-shadow: 0 0 10px 2px white;
+}
+
+button:focus {
+  outline: none;
 }
 
 button#yes,button#retreat {
@@ -106,5 +110,5 @@ audio {
   height: 50px;
   border-top-right-radius: 25px;
   background-color: ghostWhite;
-  display: inline;
+  display: inline-block;
 }
