@@ -1,7 +1,7 @@
 # Test: ANEWED.
 Available on Newgrounds.
 ## Version 1.0.3
-* Clean-up. No changes in the actual game
+* Clean-up
 ## Version 1.0.2:
 * Music fix attempt
 ## Version 1.0.1:
